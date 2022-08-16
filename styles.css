@@ -1,0 +1,220 @@
+/*Variables globales*/
+:root {
+  --bg-color: #f3f5fc;
+  --gris: #d8dfe8;
+  --azul: #0a3871;
+  --blanco: #ffffff;
+}
+
+/*Reset de css*/
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Inter", sans-serif !important;
+}
+
+/*Reglas css*/
+
+/* Logo Alura*/
+.logo {
+  margin: 40px 40px 0 0;
+}
+
+/* contenedor de toda la pagina*/
+.container {
+  min-height: 76.5vh;
+  display: grid;
+  grid-template-columns: 75% 25%;
+
+  width: 90%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Div con textarea y bottones*/
+
+.inputTexto {
+  width: 80%;
+  height: 70%;
+  padding: 20px;
+  margin: 1em auto;
+  border: none;
+  resize: none;
+  outline: none;
+  background-color: transparent;
+  outline: 0;
+  display: block;
+  font-size: 1.5em;
+  font-family: "Inter", sans-serif;
+  color: var(--azul);
+}
+
+.inputTexto::placeholder {
+  color: var(--azul);
+}
+
+.info {
+  font-size: 0.8em;
+  margin: 0.5em 0 1em 10em;
+}
+
+.btnConjunto {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 20em;
+  padding: 1em;
+  margin: 0 auto;
+  border-radius: 24px;
+  background-color: var(--azul);
+  color: var(--blanco);
+  transition: 200ms;
+}
+
+.btn:hover {
+  background-color: var(--gris);
+  color: var(--azul);
+}
+
+/* Termina div con textarea y bottones*/
+
+/* Parte Lateral*/
+
+.d-none {
+  display: none;
+}
+
+.asideEncriptador {
+  height: 100%;
+  background-color: var(--blanco);
+  border-radius: 32px;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.imgdoll {
+  display: flex;
+  align-items: center;
+  margin: 2em auto;
+  width: 80%;
+}
+
+.asidep1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--azul);
+}
+
+.asidep2 {
+  margin-top: 1em;
+  font-size: 0.8em;
+}
+
+/* Lateral Desencriptado*/
+
+.asideDesencriptado {
+  height: 100%;
+}
+
+.textoDesencriptado {
+  max-height: 70vh;
+  display: block;
+  overflow: auto;
+  height: 80%;
+  text-align: left;
+}
+
+.carta {
+  background-color: var(--bg-color);
+  padding: 1em;
+  margin-bottom: 10px;
+  border-radius: 32px;
+}
+
+.btnCopiar {
+  margin: 0 auto;
+  background-color: var(--blanco);
+  color: var(--azul);
+}
+
+.btnCopiar:hover {
+  background-color: var(--gris);
+  color: var(--azul);
+}
+
+/* Termina parte Lateral*/
+
+/* Footer*/
+
+footer {
+  margin-top: 3em;
+  padding: 1em;
+  text-align: center;
+  background-color: var(--azul);
+  font-size: 0.9em;
+  font-weight: 700;
+  color: var(--blanco);
+}
+
+/* Termina footerr*/
+
+@media (max-width: 1000px) {
+  .container {
+    display: block;
+    padding: 0;
+  }
+
+  .inputTexto {
+    width: 100%;
+    min-height: 45vh;
+    padding: 0;
+    margin: 0.5em auto;
+  }
+
+  .info {
+    margin: 0.5em 0;
+  }
+
+  .asideEncriptador {
+    margin-top: 2em;
+    padding: 0;
+  }
+
+  .asideDoll {
+    padding: 1.5em 0;
+  }
+
+  .imgdoll {
+    display: none;
+  }
+
+  .btn {
+    margin: 0.5em auto;
+  }
+
+  .carta {
+    margin: 0.5em;
+  }
+
+  .btnCopiar {
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 760px) {
+  .btnConjunto {
+    flex-direction: column;
+    align-items: center;
+  }
+}

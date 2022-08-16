@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¡Encriptador!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/Logo.svg" alt="Logo Alura" />
+      </div>
+    </header>
+    <main class="container">
+      <div class="encriptador">
+        <textarea
+          name="input"
+          id="input"
+          class="inputTexto"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <p class="info">
+          <img src="img/exclamacion.svg" alt="" />
+          Solo letras minúsculas y sin acentos
+        </p>
+        <div class="btnConjunto">
+          <button class="btn" id="btnEncriptar">Encriptar</button>
+          <button class="btn" id="btnDesencriptar">Desencriptar</button>
+        </div>
+      </div>
+      <div class="asideEncriptador">
+        <div class="asideDoll">
+          <img src="img/Muñeco.svg" alt="Muñeco" class="imgdoll" />
+          <p class="asidep1">Ningún mensaje fue encontrado</p>
+          <p class="asidep2">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+        <div class="asideDesencriptado d-none">
+          <div class="textoDesencriptado">
+            <p class="carta"></p>
+          </div>
+          <div class="btnConjunto">
+            <button class="btn btnCopiar" id="btnCopiar">Copiar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Creado por Diego Monsalve Para el Challenger Scripter del Curso 3 de
+        Oracle - Alura: ONE
+      </p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
