@@ -1,7 +1,6 @@
 //Funcion para Encriptar
 function encriptar() {
   let txtinput = document.querySelector(".inputTexto");
-  console.log(txtinput.value);
   if (txtinput.value != "") {
     let txtEncriptado = txtinput.value
       .toLowerCase()
